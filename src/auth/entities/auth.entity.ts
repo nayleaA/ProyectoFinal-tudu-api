@@ -14,6 +14,10 @@ export class Usuario {
         required:true
     })
     password?:string;
+    @Prop({
+        default:true,
+    })
+    isActive:boolean;
 }
 
 export const UsuarioSchema = SchemaFactory.createForClass(Usuario);
